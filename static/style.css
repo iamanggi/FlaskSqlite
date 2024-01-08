@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    padding: 20px;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+}
+
+body h1 {
+    text-align: center;
+}
+
+body form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px; /* Add some gap between elements */
+    padding: 20px;
+    border: 1px solid #ddd; /* Add a border for better visibility */
+    border-radius: 10px;
+}
+
+body .container {
+    display: grid;
+    justify-content: space-around;
+    padding: 7px;
+    color: black;
+}
+
+body a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007BFF; /* Add color to the link */
+    text-decoration: none; /* Remove underline from the link */
+}

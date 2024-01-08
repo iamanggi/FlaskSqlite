@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Daftar Nilai Mahasiswa</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Kode MK</th>
+                <th>Kelas</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row['id'] }}</td>
+                <td>{{ row['nama'] }}</td>
+                <td>{{ row['kd_MK'] }}</td>
+                <td>{{ row['kelas'] }}</td>
+                <td>{{ row['nilai'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="/">Kembali ke Beranda</a>
+</body>
+</html>
